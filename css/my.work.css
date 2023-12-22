@@ -9,18 +9,17 @@ body {
     background-color: #111;
 }
 .parent .items .item {
-    overflow-x:hidden;
-    overflow-y: hidden;
-    overflow-wrap: break-word;
+    overflow: hidden;
 }
 .parent .items .item a img {
     filter: brightness(50%) blur(1px);
     transition: .3s;
-}
-.parent .items .item a img:hover {
-    filter: brightness(100%) blur(0);
-    transform: scale(1.05);
-}
-.parent .items .item a img {
     width: 100%;
+}
+.parent .items .item:hover a img {
+    filter: brightness(100%) blur(0) drop-shadow(0 0 10px black);
+    transform: scale(1.05) translatex(-50%);
+    width:97.5%;
+    position: relative;
+    left: 52%;
 }
