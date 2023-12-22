@@ -8,6 +8,19 @@
 body {
     background-color: #111;
 }
+.parent .items .item {
+    overflow-x:hidden;
+    overflow-y: hidden;
+    overflow-wrap: break-word;
+}
+.parent .items .item a img {
+    filter: brightness(50%) blur(1px);
+    transition: .3s;
+}
+.parent .items .item a img:hover {
+    filter: brightness(100%) blur(0);
+    transform: scale(1.05);
+}
 .parent .items .item a img {
     width: 100%;
 }
